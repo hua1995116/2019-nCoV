@@ -1,0 +1,13 @@
+{
+    "apps" : [{
+      "name": "2019",
+      "script": "./index.js",
+      "env": {
+        "NODE_ENV": ""
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }]
+}	
+  
