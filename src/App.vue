@@ -58,7 +58,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.cityCount);
     this.make_city("绍兴", "shaoxing");
   },
   methods: {
@@ -163,7 +162,7 @@ ul {
     line-height: 60px;
   }
   span {
-    font-size: 24px
+    font-size: 24px;
   }
 }
 .sx-title {
@@ -180,7 +179,7 @@ ul {
     background: #4169e2;
     height: 30px;
     margin: 0 10px;
-    width: 10px
+    width: 10px;
   }
 }
 .news-ul {
