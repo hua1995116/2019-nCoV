@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: '/sx-2019-nCoV',
     css: {
         loaderOptions: {
              postcss: {
