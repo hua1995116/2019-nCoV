@@ -24,3 +24,5 @@ function getDingxiang() {
 const j = schedule.scheduleJob('*/20 * * * *', function(){
     getDingxiang();
 });
+
+module.exports = getDingxiang;

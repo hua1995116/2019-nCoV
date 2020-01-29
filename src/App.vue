@@ -140,6 +140,7 @@ ul {
   text-align: center;
   margin: 10px 0;
   a {
+    color: #333;
     text-decoration: none;
   }
 }
@@ -199,5 +200,8 @@ ul {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  a {
+    color: rgb(247, 76, 49);
+  }
 }
 </style>

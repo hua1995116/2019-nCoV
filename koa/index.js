@@ -9,7 +9,7 @@ const app = new Koa()
 const router = new Router();
 let cache = {};
 try {
-    cache = require('./cache.json');
+    cache = JSON.parse(fs.readFileSync('./cache.json').toString());
 } catch(e) {
     cache = {
         urls: [],
