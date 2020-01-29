@@ -22,17 +22,9 @@
     <div id="shaoxing" class="citymap"></div>
     <p class="sx-title"><i></i>新闻播报</p>
     <ul class="news-ul">
-      <li>
-        <span>2020-01-29</span>
-        <span class="news-span"><a target="_blank" href="http://www.sx.gov.cn/art/2020/1/29/art_1462940_41860641.html">越城新增8例确诊病例，累计12例。29日绍兴市新型冠状病毒感染的肺炎疫情情况通报</a></span>
-      </li>
-      <li>
-        <span>2020-01-29</span>
-        <span class="news-span"><a target="_blank" href="http://www.sx.gov.cn/art/2020/1/29/art_1462943_41860319.html">最新！诸暨确诊2例输入性新型冠状病毒感染的肺炎病例</a></span>
-      </li>
-      <li>
-        <span>2020-01-28</span>
-        <span class="news-span"><a target="_blank" href="http://www.sx.gov.cn/art/2020/1/28/art_1462940_41858837.html">最新！绍兴新增确诊1例，累计确诊7例，新增病例情况公布</a></span>
+      <li v-for="item in newsInfo" :key="item.url">
+        <span>{{item.date}}</span>
+        <span class="news-span"><a target="_blank" :href="item.url">{{item.title}}</a></span>
       </li>
     </ul>
     <p class="bottom">更新时间:{{updateTime}}</p>
@@ -57,6 +49,7 @@ export default {
     return {
       updateTime: window.updateTime,
       cityCount: window.cityCount,
+      newsInfo: window.newsInfo,
     }
   },
   mounted() {

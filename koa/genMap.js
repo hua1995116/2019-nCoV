@@ -19,8 +19,8 @@ async function getUrlValue(url) {
 
         return {
             url,
-            date,
-            title,
+            date: date[1],
+            title: title[1],
         }
 
     } catch(e) {
@@ -32,8 +32,9 @@ async function getUrlValue(url) {
 function genMap (cache) {
     const { urls, maps } = cache;
     let staticFile = fs.readFileSync(config.file).toString();
-    staticFile = staticFile.replace(/newsInfo=.+;/, `newsInfo=${JSON.stringify(urls)}`);
-    staticFile = staticFile.replace(/distribution=.+;/, `distribution=${JSON.stringify(maps)}`);
+    const newUrls = JSON.parse(JSON.stringify(urls));
+    staticFile = staticFile.replace(/newsInfo=.+;/, `newsInfo=${JSON.stringify(newUrls.reverse())};`);
+    staticFile = staticFile.replace(/distribution=.+;/, `distribution=${JSON.stringify(maps)};`);
     staticFile = staticFile.replace(/updateTime=.+;/, `updateTime='${dayjs().format('YYYY MM-DD HH:mm:ss')}';`);
     fs.writeFileSync(config.file, staticFile);
 }
