@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>manager</title>
+</head>
+<body>
+<input type="text" id="new"><button id="submitNew">增加新闻</button>
+<br>
+<input type="text" id="yuecheng" placeholder="越城区">
+<input type="text" id="keqiao" placeholder="柯桥区">
+<input type="text" id="shangyu" placeholder="上虞区">
+<input type="text" id="zhuji" placeholder="诸暨市">
+<input type="text" id="shenzhou" placeholder="嵊州市">
+<input type="text" id="xinchang" placeholder="新昌县">
+<button id="mapNew">更新数据</button>
+</body>
+<script>
+submitNew.onclick = function() {
+    const url = document.getElementById('new');
+    fetch(`/add?url=${url.value}`);
+}
+mapNew.onclick = function() {
+    fetch(`/update?yuecheng=${yuecheng.value}&keqiao=${keqiao.value}&shangyu=${shangyu.value}&zhuji=${zhuji.value}&shenzhou=${shenzhou.value}&xinchang=${xinchang.value}`);
+}
+</script>
+</html>

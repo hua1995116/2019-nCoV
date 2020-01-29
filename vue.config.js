@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: '/sx-2019-nCoV',
+    publicPath: process.env.NODE_ENV === 'production' ? '/sx-2019-nCoV' : '',
     css: {
         loaderOptions: {
              postcss: {
