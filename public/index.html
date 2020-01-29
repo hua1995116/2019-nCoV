@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>2019-ncov</title>
+    <title>绍兴-2019-nCoV</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-china-cities-js@0.1.1/echarts-china-cities-js/zhe4_jiang1_shao4_xing1.js"></script>
   </head>
+  <script>
+    window.updateTime='2020 01-29 15:33:53';
+    window.cityCount={confirmedCount:19,suspectedCount:0,curedCount:0,deadCount:0};
+    window.distribution={'越城区':12,'柯桥区':1,'上虞区':2,'诸暨市':2,'嵊州市':1,'新昌县':1};
+  </script>
   <body>
     <noscript>
       <strong>We're sorry but 2019-ncov doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
@@ -14,4 +22,6 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
 </html>

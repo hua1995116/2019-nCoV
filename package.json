@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^4.0.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
