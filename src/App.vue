@@ -187,6 +187,7 @@ ul {
   }
 }
 .news-ul {
+  font-size: 24px;
   padding: 0 40px;
   margin: 20px 0;
   line-height: 1.5;
