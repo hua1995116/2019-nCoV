@@ -27,6 +27,12 @@
         <span class="news-span"><a target="_blank" :href="item.url">{{item.title}}</a></span>
       </li>
     </ul>
+    <p class="sx-title"><i></i>好友链接</p>
+    <ul class="news-ul">
+      <li>
+        <span class="news-span"><a target="_blank" href="https://guanbinrui.cn/how-many-confirmed-infections-in-wenzhou/index.html?from=timeline&isappinstalled=0#/">温州-2019-nCoV</a></span>
+      </li>
+    </ul>
     <p class="bottom">更新时间:{{updateTime}}</p>
     <p class="bottom">地图数据来源(可能存在部分延时): <a target="_blank" href="http://www.sx.gov.cn/">中国绍兴</a></p>
     <p class="bottom">实况数据来源: <a target="_blank" href="https://3g.dxy.cn/newh5/view/pneumonia">丁香医生</a></p>
@@ -181,10 +187,10 @@ ul {
   }
 }
 .news-ul {
+  padding: 0 40px;
   margin: 20px 0;
   line-height: 1.5;
   display: flex;
-  align-items: center;
   flex-direction: column;
   li {
     margin: 10px 0;
