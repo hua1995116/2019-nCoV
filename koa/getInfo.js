@@ -6,7 +6,9 @@ const config = require('./config');
 
 function getDingxiang() {
     axios.get('https://3g.dxy.cn/newh5/view/pneumonia').then(res => {
-        const info = res.data.match(/{"cityName":"绍兴","confirmedCount":(\d+),"suspectedCount":(\d+),"curedCount":(\d+),"deadCount":(\d+)}/);
+        console.log(res.data);
+        // {"cityName":"绍兴","confirmedCount":27,"suspectedCount":0,"curedCount":1,"deadCount":0,"locationId":330600}
+        const info = res.data.match(/{"cityName":"绍兴","confirmedCount":(\d+),"suspectedCount":(\d+),"curedCount":(\d+),"deadCount":(\d+),/);
         const confirmedCount = info[1];
         const suspectedCount = info[2];
         const curedCount = info[3];

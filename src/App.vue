@@ -126,6 +126,9 @@ export default {
 </script>
 
 <style lang="less">
+body {
+  background: #fff;
+}
 h2 {
   margin-top: 40px;
   font-size: 44px;
