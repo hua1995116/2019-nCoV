@@ -1,4 +1,4 @@
-const getDingxiang = reuqire('./getInfo');
+const getDingxiang = require('./getInfo');
 const genMap = require('./genMap');
 
 let cache = {};
