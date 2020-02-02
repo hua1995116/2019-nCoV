@@ -11,11 +11,11 @@
         <span>疑似病例</span>
       </li>
       <li>
-        <strong style="color: rgb(93, 112, 146);">{{cityCount.curedCount}}</strong>
+        <strong style="color: rgb(93, 112, 146);">{{cityCount.deadCount}}</strong>
         <span>死亡人数</span>
       </li>
       <li>
-        <strong style="color: rgb(40, 183, 163);">{{cityCount.deadCount}}</strong>
+        <strong style="color: rgb(40, 183, 163);">{{cityCount.curedCount}}</strong>
         <span>治愈人数</span>
       </li>
     </ul>
